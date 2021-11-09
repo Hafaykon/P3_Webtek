@@ -190,27 +190,29 @@ body{
     width: 80vw;
     height: 80vh;
     margin: 10vh auto auto auto;
-    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
 }
 
 #info_Box{
     width: 40vw;
-    margin-right: 5vw;
-    float: left;
+    margin: 3vw;
 }
 
-#map_Container{
+#map{
+    width: 50%;
+    height: 50%;
+    margin: 3vw;
     display: flex;
-    justify-content: right;
-    margin-left: 5vw;
-    overflow: hidden;
 }
 
 #info_bottom{
-    margin-top: 10vh;
+    margin: 0 auto auto auto;
     display: flex;
     justify-content: space-between;
     width: 80vw;
+    bottom: 0;
+    position: absolute;
 }
 
 /* Menu */
@@ -236,17 +238,61 @@ body{
 }
 
 .Menu_Container img{
-    /*float: left;*/
     display: flex;
     margin: 5vh 0;
     width: 40%;
-    border: solid black;
+    border: solid black 2px;
 }
 
 .Ingredient_Container{
     width: 55%;
     margin: 5vh 0;
     font-size: 1.5vw;
+}
+
+.Ingredient_Container button{
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 1.5vw;
+    background-color: #F1CF91;
+}
+
+#More_Info{
+    border: solid black 2px;
+    background-color: white;
+    font-size: 1.5vw;
+    position: fixed;
+    padding: 15px;
+    left: 45%;
+    right: 20%;
+    z-index: 1000;
+}
+
+@media screen and (max-width: 800px) {
+
+    .Ingredient_Container {
+        width: 55%;
+        margin: 7vh 0;
+        font-size: 3vw;
+    }
+    .Menu_Container img{
+        display: flex;
+        margin: 10vh 0;
+        border: solid black 2px;
+    }
+
+    #More_Info {
+        font-size: 20px;
+        left: 20%;
+        right: 20%;
+    }
+    .Ingredient_Container button{
+        font-size: 3vw;
+    }
+    #info_Box{
+        width: 60vw;
+        margin: 3vw;
+        font-size: 2vw;
+    }
 }
 
 
