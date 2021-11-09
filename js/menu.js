@@ -20,7 +20,7 @@ const h = {
 const p = {
     n: "Pizza",
     text: "Vi lager vår Pizza på den italienske måten, men tynn, crispy bunn. Vi har vår egen saus" +
-        " og legger på saftig biffkjøtt og smakfull peperoni."
+        " og legger på saftig biffkjøtt og smakfull pepperoni."
 };
 
 const kt = {
